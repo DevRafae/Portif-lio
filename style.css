@@ -1,0 +1,80 @@
+header{
+    background-color:#17574C;
+    
+}
+button{
+    background-color: #04f4d1;
+    color: black;
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #17574C;
+    padding: 10px;
+}
+.mainmenubtn:hover {
+    background-color: #04f4d1;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: black;
+    min-width: 100px;
+    text-align: center;
+    
+}
+.dropdown-child a {
+    color: black;
+    padding: 5px;
+    border-color: #FC2055;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+body{
+    background-color: #1C1B1B;
+    color:#FBFBFB;
+}
+h1{
+    text-align: center;
+}
+span{
+    color: #FC2055;
+}
+img{
+    float: right;
+    border: transparent thin solid;
+    padding: 5px;
+    margin: 0 200px 10px 2px;
+    max-width: 300px;
+
+}
+.apre{
+    border: solid 2px;
+    border-radius: 10px 0 10px 0px;
+    padding: 5px;
+    margin: 115px 400px 200px 200px;
+    font-size: 20px;
+}
+
+a{
+    border: solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    border-color: #1C1B1B;
+    color:black;
+    background-color: #FC2055;
+    padding: 10px;
+    text-decoration: none;
+}
+footer{
+    background-color: #17574C;
+}
+
+.email {
+    text-align: left;
+    font-size: 15px;
+}
+
