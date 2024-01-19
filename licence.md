@@ -8,3 +8,12 @@ Este projeto é fornecido sem uma licença formal, o que significa que você tem
 Agradeço antecipadamente por qualquer feedback ou contribuição!
 
 Rafaela =)
+
+<h3><strong>English</strong></h3>
+This is a project that I am sharing for training and learning purposes. Feel free to explore, study, and modify parts of it for your own studies. If you have improvements or corrections, I'll be happy to receive contributions.
+
+Important Note: This project is provided without a formal license, meaning you have the freedom to study, modify, and redistribute the code. However, please note that this permission extends only to the scope of training and learning. Please respect good practices of academic ethics and do not use this project in a way that may violate academic or ethical policies.
+
+I appreciate in advance any feedback or contributions!
+
+Rafaela =)
