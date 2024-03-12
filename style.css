@@ -21,6 +21,8 @@ button{
     margin: 0.625rem;
     background-color: #04f4d1;
     color: black;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
     border: solid 0.125rem;
     border-radius: 0.625rem 10px 10px 10px;
     border-color: #17574C;
@@ -57,6 +59,8 @@ button{
     align-items: center;
     flex-direction: row;
     height: 50px;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
 }
 .tray_projetos a{
     padding: 1.5rem;
@@ -123,13 +127,15 @@ background-color:transparent;
     overflow: hidden;
     border-radius: 6px;
     background-color: #17574C;
+  
     }
   
  .span{
     padding: 16px;
     position:absolute;                    
-    color: #fff;
+    color: #ECECEC;
     font-size: 24px;
+    
     font-weight: 700;
   }
 
@@ -146,72 +152,11 @@ projeto1-card {
     .projeto1-card span {
         padding: 16px;
         position: absolute;
-        color: #fff;
+        color: #ECECEC;
         font-size: 24px;
         font-weight: 700;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
-
-    /* COLOR CARDS */
-    .card1 {
-        background-color: rgb(110, 189, 69);
-    }
-
-    .card2 {
-        background-color: rgb(135, 206, 235);
-    }
-
-    .card3 {
-        background: rgb(255, 215, 0);
-    }
-
-    .card4 {
-        background: rgb(255, 165, 0);
-    }
-
-    .card5 {
-        background: rgb(139, 69, 19);
-    }
-
-    .card6 {
-        background: rgb(135, 206, 235);
-    }
-
-    .card7 {
-        background: rgb(255, 165, 0);
-    }
-
-    .card8 {
-        background: rgb(139, 69, 19);
-    }
-
-    .card9 {
-        background: rgb(110, 189, 69);
-    }
-
-    .card10 {
-        background: rgb(255, 215, 0);
-    }
-
-    .card11 {
-        background: rgb(139, 69, 19);
-    }
-
-    .card12 {
-        background: rgb(110, 189, 69);
-    }
-
-    .card13 {
-        background: rgb(135, 206, 235);
-    }
-
-    .card14 {
-        background: rgb(255, 215, 0);
-    }
-
-    .card15 {
-        background: rgb(255, 165, 0);
-    }
-
 body{
     background-color: #1C1B1B;
     color:#FBFBFB;
@@ -244,7 +189,7 @@ img{
     margin-left: 20px;
     margin-right: 100px;
     margin-top: 100px;
-    color: #fff;
+    color: #ECECEC;
     width: 1190px;
 }
 #about h1{
@@ -307,6 +252,7 @@ img{
      bottom: 0;
     left: 0;
     right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .email{
    background: linear-gradient(to right, #17574C, aqua);
