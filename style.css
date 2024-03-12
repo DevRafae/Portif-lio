@@ -1,11 +1,12 @@
 header{
     position: fixed;
+    z-index: 1000;
     display: flex;
-    
-    background-color:#17574C;
+    background-color:#1C1B1B;
     border-radius: 10px;
     margin-top: 0rem;
     width: 100%;
+    height: 12%;
     top: 0;
     left: 0;
     right: 0;
@@ -15,6 +16,8 @@ header{
     
 }
 button{
+    display: flex;
+    justify-content: center;
     margin: 0.625rem;
     background-color: #04f4d1;
     color: black;
@@ -53,8 +56,14 @@ button{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: 5
-    0px;
+    height: 50px;
+}
+.tray_projetos a{
+    padding: 1.5rem;
+    margin: 10px;
+
+    text-decoration: none;
+    color: aqua;
 }
 .sobreMim a{
     padding: 1.5rem;
@@ -63,6 +72,68 @@ button{
     text-decoration: none;
     color: aqua;
 }
+#pr{
+    margin-top: 1rem;
+margin-bottom: 01rem;
+background-color:transparent;
+}
+
+}
+.projetos_container{
+    position:relative;
+    max-width: 100Vw;
+   max-height: 50vh;
+    padding-top: 16px;
+    border-radius: 10px;
+    background-color: #1C1B1B;
+    margin-right: 100px;
+        
+}.projetos_container {
+    max-height: 43vh;
+    margin: 24px;
+    overflow-y: auto;}
+  
+  .projetos_container::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+  .projetos_container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+ .lista_cadaProjeto {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-gap: 16px;
+    gap: 16px;
+    margin-bottom: 16px; 
+  
+    display: grid;  
+    gap: 16px;
+    grid-gap: 32px; 
+    margin: 0 auto;
+  }
+
+  
+  .cards {
+    position: relative;
+    top: 0px;                 
+    width: 210px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #17574C;
+    }
+  
+ .span{
+    padding: 16px;
+    position:absolute;                    
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+
 projeto1-card {
         position: relative;
         top: 0px;
@@ -162,10 +233,34 @@ img{
     max-width: 300px;
 
 }
+#about{ position: relative;
+    align-items: flex-end;
+    max-width: 80Vw;
+    height: 90vh;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-top: 100px;
+    color: #fff;
+    width: 1190px;
+}
+#about h1{
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 0rem;
+    
+}
 .apre{
-    padding: 5px;
-    margin: 7.1875rem 25rem 12.5rem 12.5rem;
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    font-size: 25px;
 }
 /* Seção projetos */
 
@@ -174,9 +269,9 @@ img{
       display: flex;
     position: relative;
     justify-content: center;
-    height: 50%;
+    height: 100%;
     width: 100%;
-    top: 600px;
+    top: 00px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -193,7 +288,7 @@ img{
     border-color: #1C1B1B;
     color:black;
     background-color: #FC2055;
-    padding: 0.625rem;
+    padding: 0.500rem;
     margin: 10px;
     text-decoration: none;
 }
@@ -202,44 +297,40 @@ img{
     bottom: 0;
     left: 0;
     right: 0;
-    border: solid 2px;
+    border: solid 1px;
     border-radius: 10px 10px 10px 10px;
     border-color: #1C1B1B;
     color:black;
     background-color: #FC2055;
-    padding: 0.625rem;
-    
+    padding: 0.500rem;
     text-decoration: none;
      bottom: 0;
     left: 0;
     right: 0;
 }
-/*.footer_sec {
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-    height: 50%;
-   background: linear-gradient(to right, #17574C, aqua);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 40px;*/
-}
 .email{
-   display: flex; 
-    justify-content: center;
-    width: 100%;
-    height: 50%;
    background: linear-gradient(to right, #17574C, aqua);
+   width: 50%;
+   height: 20%;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 15px 40px;
+    padding: 1rem;
 
 }
-
-.email {
-    text-align: left;
-    font-size: 15px;
+.sfooter{
+   justify-content:end;
+    align-items: flex-end;
+    max-width: 100Vw;
+   max-height: 10vw;
+    padding-top: 16px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 20px;
+    margin-right: 100px;
+    margin-top: 300px;
+    color: #fff;
+    width: 1190px;
+    
 }
-
