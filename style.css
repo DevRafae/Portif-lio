@@ -1,35 +1,33 @@
 header{
     position: fixed;
+    align-items: center;
     z-index: 1000;
     display: flex;
-    background-color:#1C1B1B;
-    border-radius: 10px;
-    margin-top: 0rem;
-    width: 100%;
+    justify-content: center;
+    background-color:#f2f2f2;
+    border-radius: 40px;
+    width: 95%;
     height: 12%;
     top: 0;
-    left: 0;
-    right: 0;
-
-  
-    
-    
+    margin-left: 30px;
 }
+
 button{
     display: flex;
     justify-content: center;
     margin: 0.625rem;
-    background-color: #04f4d1;
-    color: black;
-    font-size: 16px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ;
+    background-color: #03038c;
+    color: whitesmoke;
+    font-size: 25px;
     border: solid 0.125rem;
     border-radius: 0.625rem 10px 10px 10px;
     border-color: #17574C;
     padding:10px;
 }
 .mainmenubtn:hover {
-    background-color: #04f4d1;
+    background-color: #d5f465;
+    color: #03038c;
+    border: none;
     }
 .dropdown {
     position: relative;
@@ -65,40 +63,45 @@ button{
 .tray_projetos a{
     padding: 1.5rem;
     margin: 10px;
-
+font-size: 25px;
     text-decoration: none;
-    color: aqua;
+    color: #03038c;
 }
 .sobreMim a{
     padding: 1.5rem;
     margin: 10px;
-
+    font-size: 25px;
     text-decoration: none;
-    color: aqua;
+    color: #03038c;
 }
 #pr{
-    margin-top: 1rem;
-margin-bottom: 01rem;
+margin-bottom: 2rem;
 background-color:transparent;
+ margin: 300px 300px 0px 300px;
+ padding: 65px;
+ font-size: 25px;
 }
 
 }
 .projetos_container{
     position:relative;
     max-width: 100Vw;
-   max-height: 50vh;
-    padding-top: 16px;
+   max-height: 80vh;
+    padding-top: 10px;
+    border: solid;
     border-radius: 10px;
     background-color: #1C1B1B;
-    margin-right: 100px;
-        
-}.projetos_container {
-    max-height: 43vh;
+  
+  }
+  .projetos_container {
+    max-height: 50vh;
     margin: 24px;
     overflow-y: auto;}
+   
   
   .projetos_container::-webkit-scrollbar {
     width: 1px;
+  
   }
   
   .projetos_container::-webkit-scrollbar-thumb {
@@ -111,7 +114,6 @@ background-color:transparent;
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px; 
-  
     display: grid;  
     gap: 16px;
     grid-gap: 32px; 
@@ -126,12 +128,12 @@ background-color:transparent;
     height: 200px;
     overflow: hidden;
     border-radius: 6px;
-    background-color: #17574C;
+    background-color: #10593a;
   
     }
   
  .span{
-    padding: 16px;
+    padding: 10px;
     position:absolute;                    
     color: #ECECEC;
     font-size: 24px;
@@ -150,22 +152,24 @@ projeto1-card {
     }
 
     .projeto1-card span {
-        padding: 16px;
+        padding: 10px;
         position: absolute;
         color: #ECECEC;
         font-size: 24px;
         font-weight: 700;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-family: "Poppins", sans-serif;
+    font-style: normal;
     }
 body{
-    background-color: #1C1B1B;
-    color:#FBFBFB;
+    background-color: #ecbcfb;
+    color:#03038c;
 }
 h1{
     display: flex;
     justify-content: center;
     padding: 10px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 span{
     color: #FC2055;
@@ -183,21 +187,23 @@ img{
     max-width: 80Vw;
     height: 90vh;
     padding-top: 16px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
     background-color: transparent;
     margin-left: 20px;
     margin-right: 100px;
     margin-top: 100px;
-    color: #ECECEC;
+    color: #03038c;
     width: 1190px;
 }
 #about h1{
     position: relative;
     align-items: center;
-    padding: 10px;
+    padding: 120px 0px 0px ;
     font-size: 30px;
     margin-top: 0rem;
+    font-size: 50px;
+  
     
 }
 .apre{
@@ -205,24 +211,16 @@ img{
     align-items: center;
     justify-content: center;
     height: 500px;
-    font-size: 25px;
+    font-size: 30px;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
 }
 /* Seção projetos */
 
 
-.redes{
-      display: flex;
-    position: relative;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    top: 00px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border-radius: 10px;
-    background: linear-gradient(to right, #17574C, aqua);
-    padding: 15px 40px;
+
   
 }
 
@@ -230,23 +228,24 @@ img{
     width: 10%;
     border: solid 2px;
     border-radius: 10px 10px 10px 10px;
-    border-color: #1C1B1B;
+    border-color: #f5f5f568;
     color:black;
-    background-color: #FC2055;
+    background-color: whitesmoke;
     padding: 0.500rem;
-    margin: 10px;
     text-decoration: none;
+     bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
 }
 .redes_in a{
     width: 10%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: solid 1px;
+    border: solid 2px;
     border-radius: 10px 10px 10px 10px;
-    border-color: #1C1B1B;
+    border-color: #f5f5f568;
     color:black;
-    background-color: #FC2055;
+    background-color: whitesmoke;
     padding: 0.500rem;
     text-decoration: none;
      bottom: 0;
@@ -254,29 +253,19 @@ img{
     right: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.email{
-   background: linear-gradient(to right, #17574C, aqua);
-   width: 50%;
-   height: 20%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
 
-}
-.sfooter{
-   justify-content:end;
-    align-items: flex-end;
-    max-width: 100Vw;
-   max-height: 10vw;
-    padding-top: 16px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: transparent;
+.redes{   
+   display: flex;
+   align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    margin-bottom: 0px;
     margin-left: 20px;
     margin-right: 100px;
     margin-top: 300px;
-    color: #fff;
-    width: 1190px;
-    
+    border-radius: 10px;
+    background: whitesmoke;
+    padding: 15px 40px;
 }
