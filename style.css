@@ -3,8 +3,8 @@ header{
     align-items: center;
     z-index: 1000;
     display: flex;
-    justify-content: center;
-    background-color:#f2f2f2;
+    justify-content: space-between;
+    background-color:#e6e2e2;
     border-radius: 40px;
     width: 95%;
     height: 12%;
@@ -105,17 +105,16 @@ background-color:transparent;
     justify-content: center;
     position: relative;
     align-items: center;
-    background-color: #f2f2f2;
+    background-color: #e6e2e2;
     width: 100vw;
    height: 100vh;
-   border-radius: 90px;
+   border-radius: 4000px 0px 0px 1000px;
      background-clip: padding-box;
 }
 .projetos_container{
     display: flex;
     justify-content: center;
-    
-    max-width: 80Vw;
+    max-width: 90Vw;
     height: 50vh;
     padding: 5px;
     border: solid;
@@ -148,6 +147,7 @@ background-color:transparent;
      border: 2px solid #d5f465;
      height: 5px;
   }
+
  .lista_cadaProjeto {
     display: grid;
     justify-items: center;
@@ -156,7 +156,7 @@ background-color:transparent;
     gap: 16px;
     margin-bottom: 16px; 
     display: grid;  
-    gap: 16px;
+
     grid-gap: 32px; 
     margin: 0 auto;
   }
@@ -164,12 +164,12 @@ background-color:transparent;
   
   .cards {
     position: relative;
-    top: 0px;                 
+    margin: 0px;                
     width: 210px;
     height: 200px;
-    padding: 10px;
+    padding: 0px;
     overflow: hidden;
-    border-radius: 6px;
+    border-radius: 30px;
     background-color: #c8a2c8;
      font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -180,7 +180,7 @@ background-color:transparent;
         justify-content: center;
     }
   
- .span{
+ .card-title{
     padding: 10px;
     position:absolute;                    
     color: #ECECEC;
