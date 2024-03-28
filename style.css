@@ -3,19 +3,21 @@ header{
     align-items: center;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
-    background-color:#e6e2e2;
+    justify-content: center;
+    background-color:#c8a2c8;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
     border-radius: 40px;
     width: 95%;
-    height: 12%;
+    height: 15%;
     top: 0;
     margin-left: 30px;
+    
 }
 
 button{
     display: flex;
     justify-content: center;
-    margin: 0.625rem;
+    margin:0.4rem;
     background-color: #03038c;
     color: whitesmoke;
     font-size: 25px;
@@ -63,24 +65,32 @@ button{
 
 .sobreMim a{
     padding: 1.5rem;
-    margin: 10px;
+    margin: 0.4rem;
     font-size: 25px;
     text-decoration: none;
     color: #03038c;
 }
 .tray_projetos a{
     padding: 1.5rem;
-    margin: 10px;
+    margin: 00.4rem;
     font-size: 25px;
     text-decoration: none;
     color: #03038c;
 }
+
 .tray_redes a{
     padding: 1.5rem;
-    margin: 10px;
+    margin: 0.4rem;
     font-size: 25px;
     text-decoration: none;
     color: #03038c;
+}
+/* Efeito de cor ao passar o mouse */
+.sobreMim a:hover,
+.tray_redes a:hover,
+.tray_projetos a:hover {
+    color:#ecbcfb; /* Cor de destaque ao passar o mouse */
+    transition: color 0.3s ease; /* Transição suave da cor */
 }
 #about{
     width: 100vw;
@@ -96,31 +106,35 @@ button{
     align-items: center;
 margin-bottom: 1rem;
 background-color:transparent;
- padding: 50px;
+ padding: 10px;
  font-size: 25px;
 }
 
-#sectionProjetos{
+   #sectionProjetos {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     position: relative;
     align-items: center;
     background-color: #e6e2e2;
-    width: 100vw;
-   height: 100vh;
-   border-radius: 4000px 0px 0px 1000px;
-     background-clip: padding-box;
+    width: 100%;
+    height: 100vh;
+    border-radius: 3000px 5px 5px 1000px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
 .projetos_container{
     display: flex;
     justify-content: center;
-    max-width: 90Vw;
+    max-width: 80Vw;
     height: 50vh;
     padding: 5px;
     border: solid;
     border-color: #ecbcfb;
     border-radius: 10px;
     background-color: transparent;
+    
  
   
   }
@@ -133,8 +147,8 @@ background-color:transparent;
    
   
   .projetos_container::-webkit-scrollbar {
-    width: 15px;
-    height: 10px;
+    width: 1.25vw;
+    height: 1.25vh;
   
   
   }
@@ -151,7 +165,7 @@ background-color:transparent;
  .lista_cadaProjeto {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-columns: 1fr 1fr ;
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px; 
@@ -175,6 +189,11 @@ background-color:transparent;
     font-style: normal;
   
     }
+    .cards:hover {
+    box-shadow: 0px 0px 10px #d5f465; /* Sombra destacada */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card */
+    transition: box-shadow 0.5s ease, transform 0.3s ease; /* Transição suave */
+}
     .imagens_cards{
         display: flex;
         justify-content: center;
@@ -215,7 +234,7 @@ body{
 h1{
     display: grid;
     justify-content: center;
-    padding: 10px;
+    padding: 12px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
@@ -227,7 +246,7 @@ img{
     border: transparent thin solid;
     padding: 5px;
     margin: 0 200px 10px 2px;
-    max-width: 300px;
+    max-width: 25vw;
 
 }
 #about{ position: relative;
@@ -255,7 +274,7 @@ img{
   
     
 }
-.apre{
+#textoDigitado{
     display: flex;
     position: relative;
     align-items: center;
@@ -291,7 +310,7 @@ img{
     box-shadow: 0px 5px 15px #d5f465;
     border-color: #d5f465;
     color:black;
-    background-color: whitesmoke;
+    background-color: #e6e2e2;
     padding: 0.500rem;
     text-decoration: none;
      bottom: 0;
@@ -312,7 +331,23 @@ img{
     margin-right: 100px;
     margin-top: 300px;
     border-radius: 10px;
-    box-shadow: 15px 5px 5px168, 168, 0.1);
+    box-shadow: 15px 5px , 168, 0.1);
     background: whitesmoke;
     padding: 15px 40px;
 }
+#data-hora-atual {
+    padding: 1rem;
+    display: flex;
+    justify-content: end;
+    z-index: 1000;
+    width: 30%;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    background-color:transparent;
+    border-radius: 40px;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
