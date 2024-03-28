@@ -16,3 +16,4 @@
 
 - ``HTML``
 - ``CSS``
+- ``JavaScript``
