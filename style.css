@@ -17,14 +17,14 @@ header{
 button{
     display: flex;
     justify-content: center;
-    margin:0.4rem;
+    margin:0.2rem;
     background-color: #03038c;
     color: whitesmoke;
     font-size: 25px;
     border: solid 0.125rem;
     border-radius: 0.625rem 10px 10px 10px;
     border-color: #17574C;
-    padding:10px;
+    padding:5px;
 }
 .mainmenubtn:hover {
     background-color: #d5f465;
@@ -112,16 +112,18 @@ background-color:transparent;
 
    #sectionProjetos {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     position: relative;
     align-items: center;
     background-color: #e6e2e2;
     width: 100%;
     height: 100vh;
-    border-radius: 3000px 5px 5px 1000px;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 70px;
+ 
 }
 
 .projetos_container{
@@ -165,13 +167,13 @@ background-color:transparent;
  .lista_cadaProjeto {
     display: grid;
     justify-items: center;
-    grid-template-columns: 1fr 1fr ;
-    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
     gap: 16px;
+    
+    grid-gap: 32px; 
     margin-bottom: 16px; 
     display: grid;  
 
-    grid-gap: 32px; 
     margin: 0 auto;
   }
 
@@ -206,6 +208,14 @@ background-color:transparent;
     font-size: 24px;
     
     font-weight: 700;
+   
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 62px;
   }
 
 
@@ -294,7 +304,7 @@ img{
     border-color: #d5f465;
     text-decoration: none;
     color:black;
-    background-color: whitesmoke;
+    background-color: #e6e2e2;
     padding: 0.500rem;
      bottom:0px;
     margin-left: 10px;
@@ -344,10 +354,8 @@ img{
     font-size: 14px;
     font-weight: bold;
     color: #333;
-    background-color:transparent;
+    background-color: transparent;
     border-radius: 40px;
     box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
 
 }
-
-
