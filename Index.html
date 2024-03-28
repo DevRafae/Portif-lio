@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link rel="stylesheet" href="style.css">
-        <title>Portifólio</title>
-    </head>
-    <body>
-        <header> 
-            <div class="dropdown">
-                <button class="mainmenubtn">Projetos</button>
-                <div class="dropdown-child">
-                  <a href="https://devrafae.github.io/Quiz-JavaScript/" type="text/html">Quiz-JavaScript</a>
-                </div>
-          </div>
-          <div class="links_paginas">
-              <div class="sobreMim">
-                  <a href="#sm"> Sobre mim</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="dropdown">
+            <button class="mainmenubtn">Projetos</button>
+            <div class="dropdown-child">
+                <a href="https://devrafae.github.io/Quiz-JavaScript/" type="text/html">Quiz-JavaScript</a>
+            </div>
+        </div>
+       
+        <div class="links_paginas">
+            <div class="sobreMim">
+                <a href="#sm">Sobre mim</a>
+            </div>
+            <div class="tray_projetos">
+                <a href="#sectionProjetos">Projetos</a>
+            </div>
+            <div class="tray_redes">
+                <a href="#redes">Redes</a>   
+            </div>
+        </div>
+        <div id="data-hora-atual"></div>
+    </header>
 
-              </div>
-              <div class="tray_projetos">
-                  <a href="#sectionProjetos">Projetos</a>
-              </div>
-               <div class="tray_redes">
-                  <a href="#redes">Redes</a>
-              </div>
-
-          </div>
-        </header>
-    <main> 
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Sobre Mim -->
         <section id="about">
+            
             <div id="sm">
                 <h1>Sobre mim</h1>
             </div>
-              
-         <p class="apre">Olá! Sou Rafaela Silva, desenvolvedora Front-end com habilidades em HTML, CSS e JavaScript. 
-         Cursando o 1°semestre de Ciencias da computação</p> 
+            <div id="textoDigitado"></div>
+            
+            
         </section>
 
+        <!-- Seção Projetos -->
         <section id="sectionProjetos">
             <div id="pr">
-            <h1> Projetos recentes </h1>
+                <h1>Projetos recentes</h1>
             </div>
-
-
             <div class="projetos_container">
-    <div class="lista_cadaProjeto">
-        <!-- CARD 1 -->
+                <div class="lista_cadaProjeto">
+                    <!-- Cards de Projetos Aqui -->
+                     <!-- CARD 1 -->
         <a href="#" class="cards">
             <div class="projeto1">
                 <div class="imagens_cards">
@@ -118,28 +123,21 @@
         </a>
     </div>
 </div>
-
-                    </section>
-                    <section class="footer_sec">
                 </div>
             </div>
-
         </section>
-        
     </main>
-    <section class="sfooter">
 
+    <!-- Rodapé -->
     <footer>
-   <div id="redes">
+        <div id="redes">
             <div class="redes_in">
-            <a href="https://www.linkedin.com/in/               rafaela-januario-silva-b82548286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a> 
+                <a href="https://www.linkedin.com/in/rafaela-januario-silva-b82548286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a> 
             </div>
             <div class="redes_git">
                 <a href="https://github.com/DevRafae">Github</a>
             </div>
         </div>
-      </section>
     </footer>
-    </section>
 </body>
 </html>
