@@ -1,361 +1,238 @@
-header{
-    position: fixed;
-    align-items: center;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    background-color:#c8a2c8;
-    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 40px;
-    width: 95%;
-    height: 15%;
-    top: 0;
-    margin-left: 30px;
-    
-}
-
-button{
-    display: flex;
-    justify-content: center;
-    margin:0.2rem;
-    background-color: #03038c;
-    color: whitesmoke;
-    font-size: 25px;
-    border: solid 0.125rem;
-    border-radius: 0.625rem 10px 10px 10px;
-    border-color: #17574C;
-    padding:5px;
-}
-.mainmenubtn:hover {
-    background-color: #d5f465;
-    color: #03038c;
-    border: none;
-    }
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdown-child {
-    display: none;
-    background-color:#d5f465;
-    min-width: 100px;
-    text-align: center;
-    border-radius: 10px;
-    
-}
-.dropdown-child a {
-    color: #03038c;
-    padding: 0.3125rem;
-    border-color: #d5f465;
-    text-decoration: none;
-    display: block;
-}
-.dropdown:hover .dropdown-child {
-    display: block;
-}
-.links_paginas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 50px;
-    font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
-}
-
-.sobreMim a{
-    padding: 1.5rem;
-    margin: 0.4rem;
-    font-size: 25px;
-    text-decoration: none;
-    color: #03038c;
-}
-.tray_projetos a{
-    padding: 1.5rem;
-    margin: 00.4rem;
-    font-size: 25px;
-    text-decoration: none;
-    color: #03038c;
-}
-
-.tray_redes a{
-    padding: 1.5rem;
-    margin: 0.4rem;
-    font-size: 25px;
-    text-decoration: none;
-    color: #03038c;
-}
-/* Efeito de cor ao passar o mouse */
-.sobreMim a:hover,
-.tray_redes a:hover,
-.tray_projetos a:hover {
-    color:#ecbcfb; /* Cor de destaque ao passar o mouse */
-    transition: color 0.3s ease; /* Transição suave da cor */
-}
-#about{
-    width: 100vw;
-    max-height: 1440px;
-    background-clip: padding-box;
-   
- 
-}   
-#pr{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-margin-bottom: 1rem;
-background-color:transparent;
- padding: 10px;
- font-size: 25px;
-}
-
-   #sectionProjetos {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    background-color: #e6e2e2;
-    width: 100%;
-    height: 100vh;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 70px;
- 
+    box-sizing: border-box;
 }
 
-.projetos_container{
-    display: flex;
-    justify-content: center;
-    max-width: 80Vw;
-    height: 50vh;
-    padding: 5px;
-    border: solid;
-    border-color: #ecbcfb;
-    border-radius: 10px;
-    background-color: transparent;
-    
- 
-  
-  }
-  .projetos_container {
-    max-height: 90vh;
-    margin: 24px;
-    overflow-y: auto;
-    }
-
-   
-  
-  .projetos_container::-webkit-scrollbar {
-    width: 1.25vw;
-    height: 1.25vh;
-  
-  
-  }
-  
-  .projetos_container::-webkit-scrollbar-thumb {
-    background-color: #d5f465;
-    cursor: pointer;
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #E0D6FF;
+    color: #333333;
     transition: background-color 0.3s ease;
-    border-radius: 20px;
-     border: 2px solid #d5f465;
-     height: 5px;
-  }
-
- .lista_cadaProjeto {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    
-    grid-gap: 32px; 
-    margin-bottom: 16px; 
-    display: grid;  
-
-    margin: 0 auto;
-  }
-
-  
-  .cards {
-    position: relative;
-    margin: 0px;                
-    width: 210px;
-    height: 200px;
-    padding: 0px;
-    overflow: hidden;
-    border-radius: 30px;
-    background-color: #c8a2c8;
-     font-family: "Poppins", sans-serif;
-    font-style: normal;
-  
-    }
-    .cards:hover {
-    box-shadow: 0px 0px 10px #d5f465; /* Sombra destacada */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card */
-    transition: box-shadow 0.5s ease, transform 0.3s ease; /* Transição suave */
+    scroll-behavior: smooth; /* Adicionando scroll suave */
+    font-size: 20px;
 }
-    .imagens_cards{
-        display: flex;
-        justify-content: center;
-    }
-  
- .card-title{
-    padding: 10px;
-    position:absolute;                    
-    color: #ECECEC;
-    font-size: 24px;
-    
-    font-weight: 700;
-   
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que o menu fique acima de outros elementos */
+    background-color: #0F3057;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #FFA41B;
+    border-radius: 30px;
+}
+
+#hora {
+    font-size: 20px;
+    color: #FFA41B;
+}
+
+main {
+    margin-top: 60px; /* Adicionando margem para compensar a altura do menu fixo */
     display: flex;
     flex-direction: column;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 100%;
+    background-color: #E0D6FF;
+    padding: 40px;
+    text-align: center;
+}
+
+.inner-content {
+    max-width: 800px;
+}
+
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+
+.bandeja {
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza a bandeja */
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha quando necessário */
+}
+
+.projeto {
+    background-color: #0F3057;
     color: #fff;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    min-height: 62px;
-  }
-
-
-projeto1-card {
-        position: relative;
-        top: 0px;
-        width: 210px;
-        height: 200px;
-        overflow: hidden;
-        border-radius: 6px;
-    }
-
-    .projeto1-card span {
-        padding: 10px;
-        position: absolute;
-        color: #ECECEC;
-        font-size: 24px;
-        font-weight: 700;
-       font-family: "Poppins", sans-serif;
-    font-style: normal;
-    }
-body{
-    background-color: #ecbcfb;
-    color:#03038c;
-}
-h1{
-    display: grid;
-    justify-content: center;
-    padding: 12px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-}
-span{
-    color: #FC2055;
-}
-img{
-    float: right;
-    border: transparent thin solid;
-    padding: 5px;
-    margin: 0 200px 10px 2px;
-    max-width: 25vw;
-
-}
-#about{ position: relative;
-    align-items: flex-end;
-    max-width: 100Vw;
-    height: 100vh;
-    padding-top: 16px;
-    margin: 20px;
+    padding: 60px;
     border-radius: 10px;
-    background-color: transparent;
-    margin-left: 20px;
-    margin-right: 100px;
-    margin-top: 100px;
-    color: #03038c;
-    width: 1190px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: calc(33.33% - 20px); /* Calcula a largura para 3 cards por linha com espaço entre */
+    margin-bottom: 20px;
+    text-decoration: none; /* Remover sublinhado dos links */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
-#about h1{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-items: center;
-    padding: 120px 0px 0px;
-    margin-top: 0rem;
-    font-size: 50px;
-  
-    
+
+.projeto:hover {
+    background-color: #FFA41B;
+    transform: translateY(-2px);
 }
-#textoDigitado{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
+
+@media only screen and (max-width: 768px) {
+    .bandeja {
+        flex-direction: column;
+        align-items: center;
+        max-height: 50vh; /* Defina a altura máxima que desejar */
+        overflow-y: auto;
+    }
+
+    .projeto {
+        width: calc(100% - 40px); /* Largura total com espaço entre os cards */
+        margin-bottom: 20px;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 20px ;
+}
+
+ul li a:hover {
+    color: #00897b;
     font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-
-}
-/* Seção projetos */
-.redes_git a{
-    width: 10%;
-    border: solid 2px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px #d5f465;
-    border-color: #d5f465;
-    text-decoration: none;
-    color:black;
-    background-color: #e6e2e2;
-    padding: 0.500rem;
-     bottom:0px;
-    margin-left: 10px;
- 
-   
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.redes_in a{
-    width: 10%;
-    border: solid 2px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 5px 15px #d5f465;
-    border-color: #d5f465;
-    color:black;
-    background-color: #e6e2e2;
-    padding: 0.500rem;
-    text-decoration: none;
-     bottom: 0;
-    left:0;
-    margin-right: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+#jogo-memoria {
+    text-align: center;
+    margin-top: 20px;
 }
 
-#redes{   
-   display: flex;
-   align-items: center;
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* 4 colunas de 100px cada */
+    gap: 10px; /* Espaço entre as cartas */
     justify-content: center;
-    height: 10vh;
-    width: 100vw;
-    top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    margin-right: 100px;
-    margin-top: 300px;
-    border-radius: 10px;
-    box-shadow: 15px 5px , 168, 0.1);
-    background: whitesmoke;
-    padding: 15px 40px;
 }
-#data-hora-atual {
-    padding: 1rem;
-    display: flex;
-    justify-content: end;
-    z-index: 1000;
-    width: 30%;
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    background-color: transparent;
-    border-radius: 40px;
-    box-shadow: 0 10px 4px rgba(0, 0, 0, 0.1);
 
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: #FFA41B; /* Cor de fundo da carta */
+    color: #ffffff; /* Cor do texto da carta */
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
+
+.carta:hover {
+    background-color: #FF7C00; /* Cor de fundo da carta ao passar o mouse */
+}
+
+#info-jogo {
+    margin-top: 20px;
+}
+
+#score {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#botoes {
+    margin-top: 20px;
+}
+
+#btn-iniciar, #btn-reiniciar{
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFA41B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botoes button:hover {
+    background-color: #FF7C00;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0F3057;
+    color: #fff;
+}
+
+#theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#theme-toggle label {
+    margin-right: 10px;
+}
+
+/* Estilos para o confete */
+@keyframes confete-fall {
+    0% { transform: translateY(-100vh) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+}
+
+.confete {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700; /* Cor do confete */
+    border-radius: 50%;
+    animation: confete-fall 5s linear infinite; /* Duração da animação e repetição infinita */
+}
+
+/* Adicione mais estilos conforme necessário */
