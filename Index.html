@@ -1,143 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfólio</title>
+    <title>Portfólio de Desenvolvedora Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="dropdown">
-            <button class="mainmenubtn">Projetos</button>
-            <div class="dropdown-child">
-                <a href="https://devrafae.github.io/Quiz-JavaScript/" type="text/html">Quiz-JavaScript</a>
+    <div id="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#apresentacao">Apresentação</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#redes-sociais">Redes Sociais</a></li>
+                    <li><a href="#curriculo">Currículo</a></li>
+                </ul>
+            </nav>
+            <div id="hora"></div>
+            <div id="theme-toggle">
+                <label for="toggle-checkbox">Modo Escuro</label>
+                <input type="checkbox" id="toggle-checkbox">
             </div>
-        </div>
-       
-        <div class="links_paginas">
-            <div class="sobreMim">
-                <a href="#sm">Sobre mim</a>
-            </div>
-            <div class="tray_projetos">
-                <a href="#sectionProjetos">Projetos</a>
-            </div>
-            <div class="tray_redes">
-                <a href="#redes">Redes</a>   
-            </div>
-        </div>
-        <div id="data-hora-atual"></div>
-    </header>
+        </header>
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <!-- Seção Sobre Mim -->
-        <section id="about">
-            
-            <div id="sm">
-                <h1>Sobre mim</h1>
-            </div>
-            <div id="textoDigitado"></div>
-            
-            
-        </section>
-
-        <!-- Seção Projetos -->
-        <section id="sectionProjetos" class="grid-container">
-            <div id="pr">
-                <h1>Projetos recentes</h1>
-            </div>
-            <div class="projetos_container">
-                <div class="lista_cadaProjeto">
-                    <!-- Cards de Projetos Aqui -->
-                     <!-- CARD 1 -->
-        <a href="https://devrafae.github.io/Quiz-JavaScript/" class="cards">
-            <div class="projeto1">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 1">
+        <main>
+            <section id="apresentacao" class="content">
+                <div class="inner-content">
+                    <h1>Olá, eu sou a Rafaela Januario!</h1>
+                    <p id="typed-text"></p>
                 </div>
-                <div class="card-title">Quiz JS</div>
-            </div>
-        </a>
+            </section>
 
-        <!-- CARD 2 -->
-        <a href="#" class="cards">
-            <div class="projeto2">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 2">
+            <section id="projetos" class="content">
+                <div class="inner-content">
+                    <h2>Projetos</h2>
+                    <div class="bandeja">
+                        <a href="https://devrafae.github.io/Quiz-JavaScript/" class="projeto">Quiz JavaScript</a>
+                        <a href="link_do_projeto_2" class="projeto">Projeto 2</a>
+                        <a href="link_do_projeto_3" class="projeto">Projeto 3</a>
+                        <!-- Adicione quantos projetos desejar aqui -->
+                    </div>
                 </div>
-                <div class="card-title">Nome Projeto 2</div>
-            </div>
-        </a>
+            </section>
 
-        <!-- CARD 3 -->
-        <a href="#" class="cards">
-            <div class="projeto3">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 3">
+            <section id="redes-sociais" class="content">
+                <div class="inner-content">
+                    <h2>Redes Sociais</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/rafaela-januario-silva-b82548286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                        <li><a href="https://github.com/DevRafae">GitHub</a></li>
+                        <!-- Adicione outras redes sociais conforme necessário -->
+                    </ul>
                 </div>
-                <div class="card-title">Nome Projeto 3</div>
-            </div>
-        </a>
+            </section>
 
-        <!-- CARD 4 -->
-        <a href="#" class="cards">
-            <div class="projeto4">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 4">
+            <section id="jogo-memoria" class="content">
+                <div class="inner-content">
+                    <h3>Jogo da Memória</h3>
+                    <div id="tabuleiro"></div>
+                    <div id="info-jogo">
+                        <div id="score">Pontuação: 0</div>
+                        <button id="btn-iniciar">Iniciar Jogo</button>
+                        <button id="btn-reiniciar" style="display: none;">Jogar Novamente</button>
+                    </div>
                 </div>
-                <div class="card-title">Nome Projeto 4</div>
-            </div>
-        </a>
+            </section>
 
-        <!-- CARD 5 -->
-        <a href="#" class="cards">
-            <div class="projeto5">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 5">
+            <section id="curriculo" class="content">
+                <div class="inner-content">
+                    <h2>Currículo</h2>
+                    <p>[Inclua seu currículo aqui]</p>
                 </div>
-                <div class="card-title">Nome Projeto 5</div>
-            </div>
-        </a>
+            </section>
+        </main>
 
-        <!-- CARD 6 -->
-        <a href="#" class="cards">
-            <div class="projeto6">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 6">
-                </div>
-                <div class="card-title">Nome Projeto 6</div>
-            </div>
-        </a>
-
-        <!-- CARD 7 -->
-        <a href="#" class="cards">
-            <div class="projeto7">
-                <div class="imagens_cards">
-                    <img src="caminho_para_imagem" alt="Imagem do Projeto 7">
-                </div>
-                <div class="card-title">Nome Projeto 7</div>
-            </div>
-        </a>
+        <footer>
+            <p>&copy; 2024 Desenvolvedora Web</p>
+        </footer>
     </div>
-</div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <div id="redes">
-            <div class="redes_in">
-                <a href="https://www.linkedin.com/in/rafaela-januario-silva-b82548286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a> 
-            </div>
-            <div class="redes_git">
-                <a href="https://github.com/DevRafae">Github</a>
-            </div>
-        </div>
-    </footer>
+    <script src="script.js"></script>
 </body>
+
 </html>
